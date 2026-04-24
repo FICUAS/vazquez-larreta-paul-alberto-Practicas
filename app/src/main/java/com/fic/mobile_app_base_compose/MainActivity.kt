@@ -11,6 +11,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.fic.mobile_app_base_compose.ui.screens.home.HomeScreen
 import com.fic.mobile_app_base_compose.ui.theme.MobileappbasecomposeTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,28 +21,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             MobileappbasecomposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    Greeting(
-                        name = "Android",
-                        modifier = Modifier.padding(innerPadding)
-                    )
+
+                    HomeScreen()
+
                 }
             }
         }
     }
 }
 
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    MobileappbasecomposeTheme {
-        Greeting("Android")
-    }
-}

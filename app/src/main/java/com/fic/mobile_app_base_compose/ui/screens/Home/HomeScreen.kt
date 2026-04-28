@@ -7,6 +7,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 
@@ -31,11 +32,28 @@ fun HomeScreen() {
             color = senateWhite,
             fontSize = 42.sp,
             fontWeight = FontWeight.ExtraBold,
-            lineHeight = 48.sp
+            lineHeight = 48.sp,
+            modifier = Modifier.fillMaxWidth(),
+            textAlign = TextAlign.Center
         )
 
-        Spacer(modifier = Modifier.height(50.dp))
+        Spacer(modifier = Modifier.height(15.dp))
 
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.Center
+        ) {
+            Text(
+                text = "UNLIMITED POWER",
+                color = Color.Gray,
+                fontSize = 16.sp,
+                fontWeight = FontWeight.Light,
+                letterSpacing = 4.sp
+            )
+        }
+
+        Spacer(modifier = Modifier.height(50.dp))
 
         Button(
             onClick = { haRespondido = true },
@@ -54,7 +72,6 @@ fun HomeScreen() {
                 fontWeight = FontWeight.Bold
             )
         }
-
 
         if (haRespondido) {
             Spacer(modifier = Modifier.height(30.dp))

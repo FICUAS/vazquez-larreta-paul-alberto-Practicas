@@ -54,6 +54,12 @@ fun HomeScreen() {
             )
         }
 
+        Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_medium)))
+
+        InfoField(label = "Rango", value = "Lord Sith")
+        InfoField(label = "Estatus", value = "El Senado")
+        InfoField(label = "Poder", value = "Ilimitado")
+
         Spacer(modifier = Modifier.height(dimensionResource(id = R.dimen.spacer_motto_btn)))
 
         Button(
@@ -85,5 +91,27 @@ fun HomeScreen() {
                 letterSpacing = 2.sp
             )
         }
+    }
+}
+
+@Composable
+fun InfoField(label: String, value: String) {
+    Column(
+        modifier = Modifier
+            .fillMaxWidth()
+            .padding(vertical = 4.dp),
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+        Text(
+            text = label,
+            fontWeight = FontWeight.Bold,
+            style = MaterialTheme.typography.bodyLarge,
+            color = Color.Gray
+        )
+        Text(
+            text = value,
+            style = MaterialTheme.typography.bodyMedium,
+            color = Color.White
+        )
     }
 }

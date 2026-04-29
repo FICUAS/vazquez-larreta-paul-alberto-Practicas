@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="padding_main">16dp</dimen>
+    <dimen name="icon_size">24dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="spacer_title_motto">15dp</dimen>
+    <dimen name="spacer_motto_btn">50dp</dimen>
+    <dimen name="spacer_response">30dp</dimen>
+    <dimen name="font_title">42sp</dimen>
+    <dimen name="font_motto">16sp</dimen>
+    <dimen name="font_response">50sp</dimen>
+</resources>

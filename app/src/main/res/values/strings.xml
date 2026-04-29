@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">mobile-app-base-compose</string>
+    <string name="app_name">Mobile App Base</string>
+    <string name="senate_title">I AM THE</string>
+    <string name="sith_motto">SENATE</string>
+    <string name="btn_response">Respuesta</string>
+    <string name="not_yet">NOT YET</string>
 </resources>
